@@ -76,7 +76,7 @@ namespace TempoTray
             closeTimer.Stop();
 
             // Close the form
-            this.Close();
+            this.Hide();
         }
 
         // Handles starting and stopping the timer when the form opens / closes

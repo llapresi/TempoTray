@@ -47,6 +47,8 @@ namespace TempoTray
 
             // Add event handler to create the counter form
             trayIcon.MouseClick += new MouseEventHandler(this.OpenForm);
+
+            mainForm = new Form1();
         }
 
         void Exit(object sender, EventArgs e)
@@ -60,9 +62,8 @@ namespace TempoTray
         void OpenForm(object sender, MouseEventArgs e)
         {
             // Check if the mainForm is visibile/not null and if the tray icon was left clicked
-            if ( (mainForm == null || mainForm.Visible == false) && e.Button == MouseButtons.Left)
+            if (e.Button == MouseButtons.Left)
             {
-                mainForm = new Form1();
                 mainForm.Show();
             }
         }

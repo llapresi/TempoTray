@@ -79,7 +79,7 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.TopMost = true;
-            this.Shown += new System.EventHandler(this.Form1_Shown);
+            this.Activated += new System.EventHandler(this.Form1_Shown);
             this.ResumeLayout(false);
             this.PerformLayout();
 
