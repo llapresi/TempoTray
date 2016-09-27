@@ -61,9 +61,9 @@ namespace TempoTray
 
             // Set location of forum to bottom right of screen
             Rectangle workingArea = Screen.GetWorkingArea(this);
+            this.FormBorderStyle = FormBorderStyle.None;
             this.Location = new Point(workingArea.Right - Size.Width,
                                       workingArea.Bottom - Size.Height);
-            this.FormBorderStyle = FormBorderStyle.None;
         }
 
         // Calls when Form1 loses focus
