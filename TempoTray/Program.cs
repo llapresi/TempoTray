@@ -59,6 +59,7 @@ namespace TempoTray
 
         void OpenForm(object sender, MouseEventArgs e)
         {
+            // Check if the mainForm is visibile/not null and if the tray icon was left clicked
             if ( (mainForm == null || mainForm.Visible == false) && e.Button == MouseButtons.Left)
             {
                 mainForm = new Form1();
